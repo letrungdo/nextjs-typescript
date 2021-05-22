@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "NotoSansJPBold";
+    src: local("Noto Sans CJK JP Regular"), local("NotoSansJP-Regular"),
+        url("../fonts/NotoSansJP-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "NotoSansJPRegular";
+    src: local("Noto Sans JP Regular"), local("NotoSansJP-Regular"),
+        url("../fonts/NotoSansJP-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: local("Roboto-Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "RobotoMedium";
+    src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "RobotoRegular";
+    src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "RobotoCondensedBold";
+    src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"),
+        url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "RobotoCondensedRegular";
+    src: local("Roboto Condensed Regular"), local("RobotoCondensed-Regular"),
+        url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}

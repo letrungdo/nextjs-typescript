@@ -1,0 +1,20 @@
+html,
+body {
+    /* Disables pull-to-refresh and overscroll glow effect. 
+       Still keeps swipe navigations. */
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight on Android */
+}
+body {
+    color: var(--primary-text-color);
+    font-family: "NotoSansJPRegular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+}
+.container {
+    margin: 0 auto;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    min-width: 998px;
+}
