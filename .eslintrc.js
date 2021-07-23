@@ -1,6 +1,8 @@
 module.exports = {
     parser: "@typescript-eslint/parser", // Specifies the ESLint parser
     extends: [
+        "next",
+        "next/core-web-vitals",
         // Uses the recommended rules from @eslint-plugin-react
         "plugin:react/recommended",
         // Uses the recommended rules from the @typescript-eslint/eslint-plugin
@@ -33,6 +35,12 @@ module.exports = {
         "@typescript-eslint/ban-types": "off",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
+        "no-restricted-imports": [
+            "error",
+            {
+                patterns: ["../*", "./../*"],
+            },
+        ],
     },
     settings: {
         react: {

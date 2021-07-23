@@ -4,17 +4,33 @@ body {
        Still keeps swipe navigations. */
     overscroll-behavior: none;
     -webkit-tap-highlight-color: transparent; /* for removing the highlight on Android */
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 body {
-    color: var(--primary-text-color);
-    font-family: "NotoSansJPRegular";
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-feature-settings: "kern";
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
+    scroll-behavior: smooth;
 }
-.container {
-    margin: 0 auto;
-    background-color: var(--primary-bg-color);
-    width: 100%;
-    min-width: 998px;
+*:not(input):not(textarea) {
+    // Prevent text selection
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    // Hide scroll bar
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
